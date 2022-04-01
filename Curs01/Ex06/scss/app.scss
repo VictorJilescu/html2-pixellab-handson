@@ -1,3 +1,19 @@
+@mixin circle-border {
+  border: 1px solid blue;
+}
+
+@mixin circle {
+  border-radius: 50%;
+  border: 3px solid red;
+  background-color: purple;
+  height: 200px;
+  width: 200px;
+}
+
+@mixin circle-bg($color: purple) {
+  background-color: $color;
+}
+
 @mixin square {
   width: 200px;
   height: 200px;
@@ -32,4 +48,31 @@
 
 .square-purple {
   @include square-bg(purple);
+}
+
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.circle {
+  @include circle;
+}
+
+.circle-red {
+  @include circle-bg(red);
+}
+
+.circle-green {
+  @include circle-bg(green);
+}
+
+.circle-blue {
+  @include circle-bg(blue);
+}
+
+.circle-border-blue {
+  @include circle-border;
 }
