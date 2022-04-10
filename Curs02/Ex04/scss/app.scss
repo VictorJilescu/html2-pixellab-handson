@@ -10,8 +10,20 @@
   border: 1px solid #000;
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 to 6 {
   .box-#{$i} {
-    border-width: #{$i}px;
+    width: 145px + ($i * 5px);
+    height: 145px + ($i * 5px);
+    border: #{$i}px solid black;
+  }
+}
+
+@for $i from 10 through 50 {
+  .box-#{$i} {
+    @if $i % 0 == 0 {
+      border: 1px solid black;
+    } @else {
+      background-color: gray;
+    }
   }
 }

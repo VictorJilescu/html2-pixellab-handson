@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+body > div:first-child {
+  margin: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@keyframes blink {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+body > div:first-child span {
+  animation: blink 1.8s linear infinite alternate ;
+}
