@@ -42,6 +42,25 @@
 }
 /* do not touch this */
 
+.flex-container-01 {
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+
+.flex-container-01 div:nth-of-type(4) {
+  align-self: center;
+}
+
+.flex-container-02 {
+align-items: center;
+justify-content: center;
+}
+
+.flex-container-02 div:nth-child(5) {
+  align-self: stretch;
+}
+
 .flex-container-03 {
   justify-content: flex-end;
   align-items: flex-end;
@@ -58,4 +77,22 @@ align-items: flex-end;
 
 .flex-container-04 :last-child {
 align-self: center;
+}
+
+.flex-container-05 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container-05 div:nth-of-type(4) {
+  align-self: stretch;
+}
+
+.flex-container-06 {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.flex-container-06 div:nth-of-type(4) {
+  align-self: flex-end;
 }

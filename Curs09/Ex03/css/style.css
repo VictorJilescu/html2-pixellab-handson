@@ -60,3 +60,26 @@ justify-content: flex-end;
   align-items: center;
   justify-content: space-evenly;
 }
+
+.flex-container-03 {
+flex-direction: column-reverse;
+align-items: flex-end;
+justify-content: space-between;
+}
+
+.flex-container-04 {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.flex-container-05 {
+  flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+}
+
+.flex-container-06 {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: flex-end;
+}
