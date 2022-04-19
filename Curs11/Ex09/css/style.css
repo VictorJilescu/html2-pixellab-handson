@@ -37,5 +37,10 @@
   grid-column: 1 / span 2;
 }
 
+.grid-container-01 .grid-item-1 {
+  order: -2;
+}
 
-
+.grid-container-01 .grid-item-4 {
+  order: -1;
+}
