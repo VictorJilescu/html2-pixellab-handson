@@ -73,6 +73,23 @@
                 placeholder="Descriere lunga *"
               ></textarea>
             </div>
+
+            <div class="input-group">
+              <label
+                for="recipe-short-description"
+                class="input-group-text"
+              >Descriere scurta *</label>
+
+              <textarea
+                name="recipe-short-description"
+                id="recipe-short-description"
+                cols="30"
+                rows="5"
+                class="form-control"
+                required
+                placeholder="Descriere scurta *"
+              ></textarea>
+            </div>
           </div>
 
 
@@ -89,6 +106,25 @@
                 id="recipe-image"
                 class="form-control"
               >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="author-category"
+                class="input-group-text"
+              >Autor *</label>
+
+              <select
+                name="author-category"
+                id="author-category"
+                class="form-select"
+                required
+              >
+                <option value="">--autor--</option>
+                <option value="">Lucian Blaga</option>
+                <option value="">Ion Creanga</option>
+                <option value="">Vasile Alecsandri</option>
+              </select>
             </div>
           </div>
         </section>
@@ -129,6 +165,38 @@
                 class="form-control"
                 required
                 placeholder="Nume autor *"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="author-first-name"
+                class="input-group-text"
+              >Prenumele autorului *</label>
+
+              <input
+                type="text"
+                name="author-first-name"
+                id="author-first-name"
+                class="form-control"
+                required
+                placeholder="Prenumele autorului *"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="email"
+                class="input-group-text"
+              >Email *</label>
+
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="form-control"
+                required
+                placeholder="Email *"
               >
             </div>
           </div>
@@ -202,6 +270,38 @@
                 >Sterge</button>
               </li>
             </ul>
+
+            <ul>
+              <li>200g ceapa
+                <button
+                  type="button"
+                  title="Editeaza"
+                  class="btn btn-primary btn-sm"
+                >Editeaza</button>
+
+                <button
+                  type="button"
+                  title="Sterge"
+                  class="btn btn-danger btn-sm"
+                >Sterge</button>
+              </li>
+            </ul>
+
+            <ul>
+              <li>200g ardei gras
+                <button
+                  type="button"
+                  title="Editeaza"
+                  class="btn btn-primary btn-sm"
+                >Editeaza</button>
+
+                <button
+                  type="button"
+                  title="Sterge"
+                  class="btn btn-danger btn-sm"
+                >Sterge</button>
+              </li>
+            </ul>
           </div>
         </section>
       </fieldset>
@@ -229,12 +329,54 @@
               >
             </div>
 
-            <div class="text-end">
-              <button
-                type="button"
-                class="btn btn-outline-danger"
-                title="Reseteaza"
-              >Reseteaza</button>
+            <div class="input-group">
+              <label
+                for="step-subtitle"
+                class="input-group-text"
+              >Subtitlu pas *</label>
+
+              <input
+                type="text"
+                name="step-subtitle"
+                id="step-subtitle"
+                class="form-control"
+                placeholder="Subtitlu pas *"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="step-description"
+                class="input-group-text"
+              >Descriere pas *</label>
+
+              <textarea
+                name="step-description"
+                id="step-description"
+                cols="30"
+                rows="10"
+                required
+                class="form-control"
+                placeholder="Descriere pas *"
+              ></textarea>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  title="Reseteaza"
+                >Reseteaza</button>
+              </div>
+
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  title="Adauga pas"
+                >Adauga pas</button>
+              </div>
             </div>
           </div>
         </section>
@@ -242,6 +384,12 @@
     </main>
 
     <footer class="container text-center mt-5">
+      <button
+        type="reset"
+        title="Reseteaza tot"
+        class="btn btn-outline-danger btn-lg"
+      >Reseteaza tot</button>
+
       <button
         type="submit"
         title="Trimite Reteta"

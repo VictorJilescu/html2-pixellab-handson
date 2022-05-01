@@ -56,7 +56,7 @@
             <label
               for="product-category"
               class="input-group-text"
-            >Categorie</label>
+            >Categorie *</label>
 
             <select
               name="product-category"
@@ -69,11 +69,81 @@
               <option value="">Sucuri acidulate</option>
             </select>
           </div>
+
+          <div class="input-group">
+            <label
+              for="product-brand"
+              class="input-group-text"
+            >Brand *</label>
+
+            <select
+              name="product-brand"
+              id="product-brand"
+              class="form-select"
+              required
+            >
+              <option value="">--brand--</option>
+              <option value="">Milka</option>
+              <option value="">Oreo</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label
+              for="product-supplier"
+              class="input-group-text"
+            >Furnizor *</label>
+
+            <select
+              name="product-supplier"
+              id="product-supplier"
+              class="form-select"
+              required
+            >
+              <option value="">--furnizor--</option>
+              <option value="">safety</option>
+              <option value="">Lorem ipsum</option>
+            </select>
+          </div>
         </div>
 
 
 
         <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
+          <div class="input-group">
+            <label
+              for="name-product"
+              class="input-group-text"
+            >Numele produsului *</label>
+
+            <input
+              type="text"
+              name="name-product"
+              id="name-product"
+              placeholder="Numele produsului *"
+              class="form-control"
+              required
+            >
+          </div>
+
+          <div class="input-group">
+            <label
+              for="porduct-long-description"
+              class="input-group-text"
+            >Descriere lunga *</label>
+
+            <textarea
+              name="porduct-long-description"
+              id="porduct-long-description"
+              cols="30"
+              rows="10"
+              placeholder="Descriere lunga *"
+              class="form-control"
+              required
+            ></textarea>
+          </div>
+
+
           <div class="input-group">
             <label
               for="product-short-description"
@@ -129,22 +199,34 @@
               required
             >
           </div>
-
         </div>
 
         <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
+          <section>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                name="show-discount-price"
+                id="show-discount-price"
+                class="form-check-input"
+              >
+
+              <label for="show-discount-price">Afiseaza pret redus</label>
+            </div>
+          </section>
+
           <div class="input-group">
             <label
               for="product-offer-price"
               class="input-group-text"
-            >Pret redus</label>
+            >Pret redus *</label>
 
             <input
               type="text"
               name="product-offer-price"
               id="product-offer-price"
               class="form-control"
-              placeholder="Pret redus"
+              placeholder="Pret redus *"
               required
             >
           </div>
@@ -156,9 +238,74 @@
       <legend>Brand (optional)</legend>
 
       <section class="row">
-        <div class="col-12 col-lg-6">a</div>
+        <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+          <div class="form-check form-switch">
+            <input
+              type="checkbox"
+              name="brand-enabled"
+              id="brand-enabled"
+              class="form-check-input"
+              checked
+            >
 
-        <div class="col-12 col-lg-6">b</div>
+            <label
+              for="brand-enabled"
+              class="form-check-label"
+            >Adauga brand</label>
+          </div>
+
+          <div class="input-group">
+            <label
+              for="brand-name"
+              class="input-group-text"
+            >Nume brand *</label>
+
+            <input
+              type="text"
+              name="brand-name"
+              id="brand-name"
+              class="form-control"
+              required
+              placeholder="Nume brand *"
+            >
+          </div>
+
+          <div class="input-group">
+            <label
+              for="brand-description"
+              class="input-group-text"
+            >Descriere brand *</label>
+
+            <textarea
+              name="brand-description"
+              id="brand-description"
+              cols="30"
+              rows="7"
+              class="form-control"
+              required
+              placeholder="Descriere brand *"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mt-10 mt-lg-0">
+          <div class="input-group">
+            <label
+              for="brand-adress"
+              class="input-group-text"
+            >Adresa brandului *</label>
+
+            <textarea
+              name="brand-adress"
+              id="brand-adress"
+              cols="30"
+              rows="6"
+              class="form-control"
+              required
+              placeholder="Adresa brandului *"
+            ></textarea>
+          </div>
+        </div>
       </section>
     </fieldset>
 
@@ -167,16 +314,91 @@
     <fieldset class="mt-4">
       <legend>Furnizor (optional)</legend>
       <section class="row">
-        <div class="col-12 col-lg-6">z</div>
+        <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+          <div class="form-check form-switch">
+            <input
+              type="checkbox"
+              name="supplier-enabled"
+              id="supplier-enabled"
+              class="form-check-input"
+              checked
+            >
 
-        <div class="col-12 col-lg-6">y</div>
+            <label
+              for="supplier-enabled"
+              class="form-check-label"
+            >Adauga furnizor</label>
+          </div>
+
+          <div class="input-group">
+            <label
+              for="supplier-name"
+              class="input-group-text"
+            >Nume furnizor *</label>
+
+            <input
+              type="text"
+              name="supplier-name"
+              id="supplier-name"
+              class="form-control"
+              required
+              placeholder="Nume furnizor *"
+            >
+          </div>
+
+          <div class="input-group">
+            <label
+              for="supplier-description"
+              class="input-group-text"
+            >Descriere furnizor *</label>
+
+            <textarea
+              name="supplier-description"
+              id="supplier-description"
+              cols="30"
+              rows="7"
+              class="form-control"
+              required
+              placeholder="Descriere furnizor *"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+          <div class="input-group">
+            <label
+              for="supplier-adress"
+              class="input-group-text"
+            >Adresa furnizor *</label>
+
+            <textarea
+              name="supplier-adress"
+              id="supplier-adress"
+              cols="30"
+              rows="6"
+              class="form-control"
+              required
+              placeholder="Adresa furnizor *"
+            ></textarea>
+          </div>
+        </div>
       </section>
     </fieldset>
   </main>
 
 
-  <footer class="container">
-    <!-- add butttons,  text-center -->
+  <footer class="container text-center mt-5">
+    <button
+      type="reset"
+      title="Reseteaza tot"
+      class="btn btn-outline-danger btn-lg"
+    >Reseteaza tot</button>
+
+    <button
+      type="submit"
+      title="Trimite Reteta"
+      class="btn btn-primary btn-lg"
+    >Salveaza produsul</button>
   </footer>
 
   <div
